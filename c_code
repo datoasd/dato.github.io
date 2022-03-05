@@ -1,0 +1,21 @@
+#define  _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main() {
+
+	int a = 10;
+	int* p = &a;
+	printf("%p\n", &a);//0000004D3DAFFC54
+	printf("%p\n", p);
+	char ch = 'a';
+	char* pc= &ch;
+	printf("%d\n", sizeof(pc));
+	//*pc = 'w';
+	//printf("%c\n", ch);
+	printf("%d\n", sizeof(char*));
+	printf("%d\n", sizeof(double*));
+	printf("%d\n", sizeof(float*));
+	printf("%d\n", sizeof(short*));
+	printf("%d\n", sizeof(int*));
+
+	return 0;
+}
